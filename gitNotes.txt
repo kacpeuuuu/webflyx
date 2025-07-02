@@ -1,0 +1,6 @@
+Files have states in Git
+    untracked: Not being tracked by Git
+    staged: Marked for inclusion in the next commit
+    committed: Saved to the repository's history
+
+git status - checks the status of the files in a directory
