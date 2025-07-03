@@ -36,8 +36,12 @@ switching to use the brand new branch
 doing it in one go
     git switch -c my_new_branch // creates and switches to the new branch if does not exist creates it
 
+graphing commits
+    git log --oneline
+    git log --decorate=short
+    git log --decorate=
+    git log --decorate=no
 
-git log --oneline
-git log --decorate=short
-git log --decorate=full
-git log --decorate=no
+
+graphing the merge tree
+    git log --oneline --decorate --graph --parents
