@@ -4,3 +4,23 @@ Files have states in Git
     committed: Saved to the repository's history
 
 git status - checks the status of the files in a directory
+
+
+git config --add --local <section.key> "name the value of the key" 
+git config --add --global <section.key> "name the value of the key" 
+
+git config --get <section.key>
+git config --unset <section.key>
+git config --unset-all <section.key>            if a key has multiple instances use this if all values are to be deleted
+                                                --unset flag only works with a single instance of a key.
+
+
+git config --remove-section <section>
+
+
+There are several locations where Git can be configured. From more general to more specific, they are:
+
+    system: /etc/gitconfig, a file that configures Git for all users on the system
+    global: ~/.gitconfig, a file that configures Git for all projects of a user
+    local: .git/config, a file that configures Git for a specific project
+    worktree: .git/config.worktree, a file that configures Git for part of a project
