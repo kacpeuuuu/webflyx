@@ -37,4 +37,7 @@ doing it in one go
     git switch -c my_new_branch // creates and switches to the new branch if does not exist creates it
 
 
-creating a branch 
+git log --oneline
+git log --decorate=short
+git log --decorate=full
+git log --decorate=no
