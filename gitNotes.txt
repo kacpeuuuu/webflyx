@@ -45,3 +45,15 @@ graphing commits
 
 graphing the merge tree
     git log --oneline --decorate --graph --parents
+
+
+A fast-forward merge is the simplest kind of merge. It happens when the current branch has not diverged from 
+the branch you're merging in — meaning the current branch is behind but not different from the target branch.
+
+A - B - C
+        \
+         D - E
+
+becomes
+     
+A - B - C - D - E
