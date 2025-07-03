@@ -57,3 +57,34 @@ A - B - C
 becomes
      
 A - B - C - D - E
+
+
+REBASE
+
+          A---B---C topic
+         /
+    D---E---F---G master
+becomes
+
+git rebase master
+
+                  A'--B'--C' topic
+                 /
+    D---E---F---G master
+
+rebase avoids merging, it reapplies commits on top of our base tip
+
+REMOTES
+a remote is just another repo
+git remote add <name> <url>
+
+downloading files of the remote
+    git fetch
+
+logging the remote 
+    git log remote/branch
+            <name>/<branch>
+
+merging files
+    git merge remote/branch
+    git merge origin/webflyx
