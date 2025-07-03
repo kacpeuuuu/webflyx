@@ -24,3 +24,17 @@ There are several locations where Git can be configured. From more general to mo
     global: ~/.gitconfig, a file that configures Git for all projects of a user
     local: .git/config, a file that configures Git for a specific project
     worktree: .git/config.worktree, a file that configures Git for part of a project
+
+checking existing branches
+    git branch
+    
+creating a branch
+    git branch my_new_branch
+switching to use the brand new branch
+    git switch my_new_branch
+
+doing it in one go
+    git switch -c my_new_branch // creates and switches to the new branch if does not exist creates it
+
+
+creating a branch 
